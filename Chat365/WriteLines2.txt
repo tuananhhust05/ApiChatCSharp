@@ -1,0 +1,5 @@
+System.ArgumentNullException: Value cannot be null. (Parameter 'content')
+   at System.Net.Http.StringContent.GetContentByteArray(String content, Encoding encoding)
+   at System.Net.Http.StringContent..ctor(String content, Encoding encoding, String mediaType)
+   at System.Net.Http.StringContent..ctor(String content)
+   at Chat365.Server.Controllers.MessageController.sendNotificationToTimViec(Messages message, String conversationName, Int32 conversationId, Int32[] listmember, Int32[] isOnline, Int32 isGroup, Boolean flag) in F:\project\apiChat_main\Chat365\Controllers\MessageController.cs:line 1304
