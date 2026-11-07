@@ -51,10 +51,10 @@ namespace Chat365.Server.Model.EntityAPI
     }
     public class OTPByPhone
     {
-        public string ApiKey = "CD013D8EF367403A13DB9695679A32";
+        public string ApiKey = Environment.GetEnvironmentVariable("ESMS_API_KEY");
         public string Content { get; set; }
         public string Phone { get; set; }
-        public string SecretKey = "80A7A1845725B74E5766A5BFB0B167";
+        public string SecretKey = Environment.GetEnvironmentVariable("ESMS_SECRET_KEY");
         public string IsUnicode = "1";
         public string Brandname = "TIMVIEC365";
         public string SmsType = "2";
