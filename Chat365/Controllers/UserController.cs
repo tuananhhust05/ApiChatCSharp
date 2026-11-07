@@ -2713,7 +2713,7 @@ namespace Chat365.Server.Controllers
                         QRInfo qr = new QRInfo("QRAddFriend", friend, DateTime.Now.AddHours(1));
                         string code = JsonConvert.SerializeObject(qr).MaxEncode();
                         userAPI.data.user_info.userQr = code;
-                        if (!String.IsNullOrEmpty(secretCode) && secretCode.Equals("f0c8f3b2312aa616be5f1ce38cd96da6"))
+                        if (!String.IsNullOrEmpty(secretCode) && secretCode.Equals(Environment.GetEnvironmentVariable("CHAT365_SECRET_CODE")))
                         {
 
                             userAPI.data.countConversation = DAOConversation.GetCountConversation(ID);

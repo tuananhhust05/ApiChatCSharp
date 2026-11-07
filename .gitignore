@@ -338,3 +338,11 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+# Runtime uploads and logs
+Chat365/wwwroot/uploads/
+Chat365/wwwroot/uploadsImageSmall/
+Chat365/wwwroot/UploadCode/
+Chat365/wwwroot/avatar/
+Chat365/wwwroot/avatarGroup/
+Chat365/wwwroot/avatarUser/
+Chat365/WriteLines*.txt
